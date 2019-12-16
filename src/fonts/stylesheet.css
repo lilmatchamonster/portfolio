@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Crabmeal';
+    src: url('Crabmeal.eot');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Crabmeal';
+    src: local('Crabmeal'),
+        url('./Crabmeal.woff') format('woff'),
+        url('./Crabmeal.ttf') format('truetype'),
+        url('./Crabmeal.svg#Crabmeal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
