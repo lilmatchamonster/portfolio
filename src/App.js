@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import { Route, Link, NavLink } from "react-router-dom";
+import { Route } from "react-router-dom";
 import Header from './components/Header'
 import About from './components/About'
 import Skills from './components/Skills'
@@ -14,8 +14,6 @@ import leaf from './imgs/leaf.jpg'
 import leaf_invert from './imgs/leaf-inverted.jpg'
 import berry from './imgs/galina-n-AgWVcQz1bOA-unsplash.jpg'
 import berry_invert from './imgs/galina-n-AgWVcQz1bOA-unsplash-inverted.jpg'
-import { red } from 'ansi-colors';
-
 
 const theme = [
   {color: 'hsl(351, 28%, 52%)',  background: `url(${leaf})`, h1:{color: 'hsla(351, 28%, 52%, .19)'}},
@@ -70,9 +68,9 @@ function App() {
 
   return (
     <BgImag primary theme className="App">
-      <Header changeTheme={changeTheme} currentTheme={currentTheme} themeInvert={themeInvert} theme={theme[currentTheme]} />
+      <Header changeTheme={changeTheme} currentTheme={currentTheme} themeInvert={themeInvert} theme={theme[currentTheme]} toggleMenu={toggleMenu} />
       <div>
-        <Menu className="menu-position"changeTheme={changeTheme} />
+        <Menu className="menu-position" changeTheme={changeTheme} />
         <Route exact path='/'component={About} />
         <Route path='/skills'component={Skills} />
         <Route path='/projects'component={Projects} />

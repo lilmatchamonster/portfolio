@@ -3,8 +3,7 @@ import { NavLink } from "react-router-dom";
 import styled from 'styled-components';
 
 const Menu = (props) => {
-	console.log(props.theme)
-	const currenttheme = props.currentTheme;
+	// console.log(props.theme)
 	
 	const StyledMenu = styled.div`
     display: flex;
@@ -21,7 +20,6 @@ const Menu = (props) => {
       margin: 20% 0;
       text-decoration: none;
       font-family: 'Crabmeal', arial;
-
     }
 	`
 	return ( 

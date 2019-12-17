@@ -1,32 +1,16 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 import styled from 'styled-components';
 
 const Header = (props) => {
-	console.log(props.theme)
-	const currenttheme = props.currentTheme;
+	console.log(props.toggleMenu)
 	
 	const StyledHeader = styled.div`
-		border: 1px solid black;
-		/* section {
-			display: flex;
-			flex-direction: column;
-			text-align: left;
-			border: 1px solid black;
-			padding: 0 0 0 2%;
-			width: min-content;
-
-			.links {
-				&:visited {
-					color: inherit;
-				}
-				margin: 5% 0;
-				text-decoration: none;
-				font-family: 'Crabmeal', arial;
-
-			}
-		} */
 		h1 {
+			display: flex;
+			justify-content: center;
+			align-items: center;
 			width: 45px;
 			height: 45px;
 			border-radius: 2rem;
@@ -36,12 +20,7 @@ const Header = (props) => {
 	`
 	return ( 
 		<StyledHeader>
-			<h1 onClick={props.themeInvert}>#</h1>
-			{/* <section>
-				<NavLink className="links" to='/' onClick= {()=>props.changeTheme(0)}>About</NavLink>
-				<NavLink className="links" to='/skills' onClick= {()=>props.changeTheme(2)}>Skills</NavLink>
-				<NavLink className="links" to='/projects' onClick= {()=>props.changeTheme(4)}>Projects</NavLink>
-			</section> */}
+			<h1 onClick={props.themeInvert}><FontAwesomeIcon icon={props.toggleMenu ? faTimes : faBars} size="sm" /></h1>
 		</StyledHeader>
 	)
 }
