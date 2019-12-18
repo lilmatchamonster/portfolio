@@ -8,6 +8,7 @@ const Header = (props) => {
 	
 	const StyledHeader = styled.div`
 		h1 {
+			position: relative;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -16,6 +17,7 @@ const Header = (props) => {
 			border-radius: 2rem;
 			background-color: ${props.theme.h1.color};
 			margin: 1% auto;
+			z-index: 1;
 		}
 	`
 	return ( 

@@ -1,11 +1,14 @@
-import React,{useState} from 'react';
+import React,{ useState } from 'react';
 import { Route } from "react-router-dom";
+import Fade from 'react-reveal/Fade';
+import 'classnames';
 import Header from './components/Header'
 import About from './components/About'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Menu from './components/Menu'
 import Footer from './components/Footer'
+import Overlay from './components/Overlay'
 import './App.css';
 import styled from 'styled-components'
 import beach from './imgs/beach-close-up-cold-1533720.jpg'
@@ -26,7 +29,7 @@ const theme = [
 
 
 function App() {
-  
+
   const [currentTheme, setcurrentTheme] = useState(0);
   const [toggleMenu, settoggleMenu] = useState(false);
   console.log(`Toggle: ${toggleMenu}`)
@@ -67,16 +70,19 @@ function App() {
   `;
 
   return (
-    <BgImag primary theme className="App">
-      <Header changeTheme={changeTheme} currentTheme={currentTheme} themeInvert={themeInvert} theme={theme[currentTheme]} toggleMenu={toggleMenu} />
-      <div>
-        <Menu className="menu-position" changeTheme={changeTheme} />
-        <Route exact path='/'component={About} />
-        <Route path='/skills'component={Skills} />
-        <Route path='/projects'component={Projects} />
-      </div>
-      <Footer />
-    </BgImag>
+    <Fade spy={currentTheme}>
+      <BgImag primary theme className="App">
+        <Header changeTheme={changeTheme} currentTheme={currentTheme} themeInvert={themeInvert} theme={theme[currentTheme]} toggleMenu={toggleMenu} />
+        <div>
+          <Menu className="menu-position" changeTheme={changeTheme} />
+          <Route exact path='/'component={About} />
+          <Route path='/skills'component={Skills} />
+          <Route path='/projects'component={Projects} />
+        </div>
+        <Footer />
+        {/* <Overlay toggleMenu={toggleMenu}/> */}
+      </BgImag>
+    </Fade>
   );
 }
 
