@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 import styled from 'styled-components';
 
 const Menu = (props) => {
-	// console.log(props.theme)
-	
+  // console.log(props.theme)
+    
 	const StyledMenu = styled.div`
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@ const Menu = (props) => {
       text-decoration: none;
       font-family: 'Crabmeal', arial;
     }
-	`
+	`;
 	return ( 
 		<StyledMenu>
       <NavLink className="links" to='/' onClick= {()=>props.changeTheme(0)}>About</NavLink>

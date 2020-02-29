@@ -5,7 +5,13 @@ import styled from 'styled-components';
 
 const Header = (props) => {
 	console.log(props.toggleMenu)
-	
+
+	const theme = {
+		"/" : `hsla(351, 28%, 52%, .19)`,
+		"/projects" : `hsla(206, 56%, 23%, .19)`,
+		"/skills" : `hsla(206, 19%, 59%, .19)`
+	}
+
 	const StyledHeader = styled.div`
 		h1 {
 			position: relative;
@@ -15,7 +21,8 @@ const Header = (props) => {
 			width: 45px;
 			height: 45px;
 			border-radius: 2rem;
-			background-color: ${props.theme.h1.color};
+			background-color: ${theme[props.history.location.pathname]};
+			color: ${theme[props.history.location.pathname]};
 			margin: 1% auto;
 			z-index: 1;
 		}

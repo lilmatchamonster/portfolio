@@ -1,6 +1,5 @@
-import React,{ useState } from 'react';
+import React, { useState } from 'react';
 import { Route } from "react-router-dom";
-import Fade from 'react-reveal/Fade';
 import 'classnames';
 import Header from './components/Header'
 import About from './components/About'
@@ -28,10 +27,12 @@ const theme = [
 ]
 
 
-function App() {
+function App(props) {
+  console.log(props)
 
   const [currentTheme, setcurrentTheme] = useState(0);
   const [toggleMenu, settoggleMenu] = useState(false);
+  const [current, setCurrent] = useState(true);
   console.log(`Toggle: ${toggleMenu}`)
 
   const changeTheme = (set) => {
@@ -52,10 +53,6 @@ function App() {
   }
   
   const BgImag = styled.div`
-    /* Adapt the colors based on primary prop */
-    /* background: url(${props => props.primary ? leaf : leaf_invert}) no-repeat center center fixed; */
-    /* background-color: ${props => props.primary ? '#f8f8f8' : '#070707'}; */
-    /* color: ${props => props.primary ? 'hsla(351, 28%, 52%, .19)' : '#070707'}; */
     ${theme[currentTheme]}
     background-position: center;
     -webkit-background-size: cover;
@@ -70,19 +67,17 @@ function App() {
   `;
 
   return (
-    <Fade spy={currentTheme}>
-      <BgImag primary theme className="App">
-        <Header changeTheme={changeTheme} currentTheme={currentTheme} themeInvert={themeInvert} theme={theme[currentTheme]} toggleMenu={toggleMenu} />
+    <BgImag primary theme className="App">
+        <Header history={props.history} changeTheme={changeTheme} currentTheme={currentTheme} themeInvert={themeInvert} toggleMenu={toggleMenu} />
         <div>
           <Menu className="menu-position" changeTheme={changeTheme} />
-          <Route exact path='/'component={About} />
+          <Route exact path='/' render={() => <About current={current} />} />
           <Route path='/skills'component={Skills} />
           <Route path='/projects'component={Projects} />
         </div>
         <Footer />
         {/* <Overlay toggleMenu={toggleMenu}/> */}
       </BgImag>
-    </Fade>
   );
 }
 
