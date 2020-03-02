@@ -1,5 +1,83 @@
 .App {
   text-align: center;
+  box-sizing: border-box;
+}
+
+/* .alert-enter, .alert-appear {
+  opacity: 0;
+}
+.alert-enter-done, .alert-appear-done {
+  transform: rotate(720deg) scale(1);
+  opacity: 1;
+  transition: transform 1000ms, opacity 200ms;
+}
+.alert-exit {
+  transform: rotate(720deg) scale(1);
+  opacity: 1;
+}
+.alert-exit-done, .alert-exit-active {
+  transform: rotate(0deg) scale(0);
+  opacity: 0;
+  transition: transform 1000ms, opacity 200ms;
+} */
+
+/* ENTER TRANSITION */
+/* Declare transition start properties*/
+/* .slide-enter {
+  transform: scale(0,0);
+  opacity: 0;
+  position: absolute;
+  
+}
+
+/* Declare transition properties */
+/* .slide-enter, .slide-enter-active, .slide-enter-done {
+  transform: scale(2,2);
+  opacity: 1;
+  transition: all 300ms linear 300ms;
+} */
+
+/* EXIT TRANSITION */
+/* .slide-exit {
+  transform: scale(2,2);
+  opacity: 1;
+  
+}
+
+.slide-exit, .slide-exit-active, .slide-exit-done {
+  transform: scale(0,0);
+  opacity: 0;
+  transition: all 300ms linear;
+} */ 
+
+.page-fade-appear {
+  opacity: 0;
+  position: absolute;
+}
+
+.page-fade-appear, .page-fade-appear-active, .page-fade-appear-done {
+  opacity: 1;
+  transition: opacity 300ms linear 300ms;
+}
+
+.page-fade-enter {
+  opacity: 0;
+  position: absolute;
+}
+
+.page-fade-enter, .page-fade-enter-active, .page-fade-enter-done {
+  opacity: 1;
+  transition: opacity 300ms linear 300ms;
+}
+
+.page-fade-exit {
+  opacity: 1;
+  position: absolute
+}
+
+.page-fade-exit, .page-fade-exit-active, .page-fade-exit-done {
+  opacity: 0;
+  transition: opacity 300ms linear;
 }
 
 
