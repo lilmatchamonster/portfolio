@@ -1,8 +1,11 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
 import styled from 'styled-components';
+import '../App.css';
 
 const Menu = (props) => {
+  const { history, settoggleMenu, toggleMenu } = props
+  console.log(props)
 
   const theme = {
 		"/" : {color: 'hsl(351, 28%, 52%)', h1:{color: 'hsla(351, 28%, 52%, .19)'}},
@@ -17,7 +20,7 @@ const Menu = (props) => {
     margin-left: 2%;
     position: absolute;
     z-index: 100;
-    ${theme[props.history.location.pathname]}
+    ${theme[history.location.pathname]}
 
     .links {
       &:visited {
@@ -29,11 +32,11 @@ const Menu = (props) => {
     }
 	`;
 	return ( 
-		<StyledMenu>
-      <NavLink className="links" to='/' onClick= {()=> props.toggleMenu ? props.themeInvert() : null}>About</NavLink>
-      <NavLink className="links" to='/projects' onClick= {()=> props.toggleMenu ? props.themeInvert() : null}>Projects</NavLink>
-      <NavLink className="links" to='/skills' onClick= {()=> props.toggleMenu ? props.themeInvert() : null}>Skills</NavLink>
-		</StyledMenu>
+    <StyledMenu>
+      <NavLink className="links" to='/' onClick= {()=> settoggleMenu(false)}>About</NavLink>
+      <NavLink className="links" to='/projects' onClick= {()=> toggleMenu ? props.themeInvert() : null}>Projects</NavLink>
+      <NavLink className="links" to='/skills' onClick= {()=> toggleMenu ? props.themeInvert() : null}>Skills</NavLink>
+    </StyledMenu>
 	)
 }
 
