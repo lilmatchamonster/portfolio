@@ -21,7 +21,9 @@ const Projects = (props) => {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    padding-top: 3.5%;
     position: absolute;
     top: 0;
     bottom: 0;

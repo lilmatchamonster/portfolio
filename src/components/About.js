@@ -23,6 +23,8 @@ const About = (props) => {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 3.5%;
     position: absolute;
     top: 0;
     bottom: 0;

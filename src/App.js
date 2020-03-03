@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, useLocation } from "react-router-dom";
 import { useTransition, useSpring, animated } from "react-spring";
 import { Spring, Transition } from "react-spring/renderprops";
 import Header from './components/Header'
@@ -12,7 +12,8 @@ import './App.css';
 
 
 function App(props) {
-  const { location, history } = props
+  const { history } = props
+  let location = useLocation()
   let curLocation = location.pathname
   const [toggleMenu, settoggleMenu] = useState(false);
   const [load, setLoad] = useState(false);
@@ -46,9 +47,9 @@ function App(props) {
       <div>
         <Transition
             items={toggleMenu} 
-            from={{marginLeft: -100 }} 
+            from={{marginLeft: -150 }} 
             enter={{marginLeft: 0 }} 
-            leave={{marginLeft: -100 }}
+            leave={{marginLeft: -150 }}
           >
             {toggleMenu => toggleMenu && (props => <animated.div style={props}><Menu className="menu-position" history={history} settoggleMenu={settoggleMenu} toggleMenu={toggleMenu} themeInvert={themeInvert}/></animated.div>)}</Transition>
         {/* {toggleMenu ? <animated.div style={fade}><Menu className="menu-position" history={history} settoggleMenu={settoggleMenu} toggleMenu={toggleMenu} themeInvert={themeInvert}/></animated.div> : null} */}

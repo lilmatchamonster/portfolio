@@ -3,7 +3,7 @@ import { Transition } from "react-spring/renderprops";
 import styled from 'styled-components';
 import beach from '../imgs/beach-close-up-cold-1533720.jpg'
 import beach_invert from '../imgs/beach-close-up-cold-inverted.jpg'
-
+import '../App.css';
 
 const Skills = (props) => {
   const { toggleMenu } = props
@@ -22,7 +22,9 @@ const Skills = (props) => {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    padding-top: 3.5%;
     position: absolute;
     top: 0;
     bottom: 0;
