@@ -1,8 +1,9 @@
 import React from 'react';
 import { Transition } from "react-spring/renderprops";
 import styled from 'styled-components';
-import leaf from '../imgs/leaf.jpg'
-import leaf_invert from '../imgs/leaf-inverted.jpg'
+import leaf from '../imgs/leaf.jpg';
+import leaf_invert from '../imgs/leaf-inverted.jpg';
+import profilePic from '../imgs/profilePic.jpg';
 import '../App.css';
 
 const About = (props) => {
@@ -15,7 +16,6 @@ const About = (props) => {
   }
   
   const AboutSyles = styled.div`
-    border: 2px solid orange;
     box-sizing: border-box;
     /* ${theme[curTheme]} */
     background-position: center;
@@ -29,6 +29,42 @@ const About = (props) => {
     top: 0;
     bottom: 0;
     width: 100%;
+
+    .intro-card{
+      display: flex;
+      /* justify-content: center; */
+      align-items: center;
+      padding-left: 10%;
+      background-color: hsla(351, 28%, 52%, .09);
+      
+      img {
+        box-shadow: 5px 10px 18px silver;
+        width: 15rem;
+        height: 15rem;
+        border-radius: 50%;
+        /* border-style: dotted; */
+      }
+      p {
+        background-color: hsla(351, 28%, 52%, .09);
+        box-shadow: 5px 10px 18px silver;
+        font-size: 1rem;
+        /* color: #0c2b31;   */
+        font-weight: 500;
+        text-align: left;
+        text-shadow: 1px 1px silver;
+        /* border: 1px solid white; */
+        padding: 2%;
+        margin: 1%;
+        width: 40%;
+      }
+    }
+    .preview {
+      img {
+        width: 200px;
+        margin: 1%;
+        border: 1px solid white;
+      }
+    }
   `;
   return (
     <Transition
@@ -44,12 +80,26 @@ const About = (props) => {
           <AboutSyles style={theme['b']}>
             <div></div>
           </AboutSyles>
-         </div>
+         </div> 
         :
         props => 
         <div style={props}>
           <AboutSyles style={theme['a']}>
             <h1 style={{color: 'hsla(351, 28%, 52%, .19)'}}>About Component</h1>
+            <div className={'intro-card'}>
+              <img src={profilePic} alt="Ash"/>
+              <p>
+                Hi, I am Ashley a Digital Artist and Full Stack Web Developer. I have always loved to create something beautiful be it visual, musical, or technical.
+                I believe that we should use our talents to improve the world around us and improve the lives of others. 
+                <br/>As a web developer, I hope to use my skills
+                to persure meaningful work with opportunities to grow and learn.
+              </p>
+            </div>
+            <section className="preview">
+              <img src={leaf} alt="leaf"/>
+              <img src={leaf_invert} alt="inverted leaf"/>
+              <img src={leaf} alt="leaf"/>
+            </section>
           </AboutSyles>
          </div>
       }
