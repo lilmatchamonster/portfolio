@@ -3,6 +3,7 @@ import { Transition } from "react-spring/renderprops";
 import styled from 'styled-components';
 import berry from '../imgs/galina-n-AgWVcQz1bOA-unsplash.jpg'
 import berry_invert from '../imgs/galina-n-AgWVcQz1bOA-unsplash-inverted.jpg'
+import ila from '../imgs/Ila 2.jpg';
 import '../App.css';
 
 const Projects = (props) => {
@@ -15,7 +16,6 @@ const Projects = (props) => {
   }
 
   const ProjectSyles = styled.div`
-    box-sizing: border-box;
     /* ${theme[curTheme]} */
     background-position: center;
     -webkit-background-size: cover;
@@ -28,6 +28,17 @@ const Projects = (props) => {
     top: 0;
     bottom: 0;
     width: 100%;
+
+    .projects {
+      img {
+        width: 150px;
+        border-radius: 50%;
+      }
+      fieldset {
+        text-align: left;
+        border: 1px solid white;
+      }
+    }
   `;
   return (
     <Transition
@@ -49,6 +60,15 @@ const Projects = (props) => {
         <div style={props}>
           <ProjectSyles style={theme['a']}>
             <h1 style={{color: 'hsla(206, 56%, 23%, .19)'}}>Projects Component</h1>
+            <div className={'projects'}>
+              <fieldset> 
+                <legend><img src={ila} alt="Ila" /></legend>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                </p>
+              </fieldset>
+            </div>
           </ProjectSyles>
         </div>
       }
