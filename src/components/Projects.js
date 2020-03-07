@@ -21,15 +21,21 @@ const Projects = (props) => {
   const myProjects = [
     {
       pic: `${vendme}`,
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      title: 'Vendme',
+      short: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      description: 'lppp'
     },
     {
       pic: `${spacequest}`,
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      title: 'SpaceQuest9',
+      short: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      description: ''
     },
     {
       pic: `${ila}`,
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      title: 'Unknown',
+      short: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      description: ''
     }
   ]
 
@@ -46,11 +52,11 @@ const Projects = (props) => {
     top: 0;
     bottom: 0;
     width: 100%;
-
+    
     .projects {
       margin-top: 5%;
       display: flex;
-      /* flex-direction: column; */
+      flex-direction: column;
       justify-content: center;
       align-items: center;
     }
@@ -76,8 +82,8 @@ const Projects = (props) => {
           <ProjectSyles style={theme['a']}>
             <h1 style={{color: 'hsla(206, 56%, 23%, .19)'}}>Projects Component</h1>
             <div className={'projects'}>
-              {myProjects.map(card => (
-                <ProjectCard description={card.description} pic={card.pic}/>
+              {myProjects.map((card, i) => (
+                <ProjectCard key={i} description={card.description} pic={card.pic} title={card.title} short={card.short}/>
               ))}
             </div>
           </ProjectSyles>
@@ -88,24 +94,3 @@ const Projects = (props) => {
 }
 
 export default Projects
-// {/* <div className={'card'}> 
-//   <legend><img src={ila} alt="Ila" /></legend>
-//   <p>
-//     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-//     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-//   </p>
-// </div>
-// <div className={'card'}> 
-//   <legend><img src={ila} alt="Ila" /></legend>
-//   <p>
-//     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-//     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-//   </p>
-// </div>
-// <div className={'card'}> 
-//   <legend><img src={ila} alt="Ila" /></legend>
-//   <p>
-//     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-//     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-//   </p>
-// </div> */}
