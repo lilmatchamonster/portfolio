@@ -6,6 +6,9 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 // import { faCheckSquare } from '@fortawesome/free-solid-svg-icons';
 import styled from 'styled-components';
+import herokuLogo from '../imgs/herokuLogo.svg';
+import sqliteLogo from '../imgs/sqliteLogo.svg';
+import restfulLogo from '../imgs/restfulLogo.svg';
 import beach from '../imgs/beach-close-up-cold-1533720.jpg';
 import beach_invert from '../imgs/beach-close-up-cold-inverted.jpg';
 import '../App.css';
@@ -49,8 +52,9 @@ const Skills = (props) => {
     {
       name: 'RESTful Api',
       icon: null,
-      class: 'restful',
-      newIcon: '{ RESTful }',
+      class: 'restful rest',
+      // newIcon: '{ RESTful }',
+      newIcon: <img src={`${restfulLogo}`} width="100px" alt="heroku"/>,
       description: 'Experince in working with and building restful api endpoints to build full crud functionality'
     },
     {
@@ -61,31 +65,31 @@ const Skills = (props) => {
     {
       name: 'Python',
       icon: <FontAwesomeIcon icon={['fab', 'python']} />,
-      description: 'Python'
+      description: 'Basic understanding of Python, Flask, and Django.'
     },
     {
       name: 'Squarespace',
       icon: <FontAwesomeIcon icon={['fab', 'squarespace']} />,
-      description: 'SquareSpace'
+      description: 'Well versed in setting up dynamic and unique website through Squarespace. Excellent at setting up Commerce sites and handling payments via Stripe.'
     },
     {
       name: 'SQLite3',
       icon: null,
-      class: 'restful',
-      newIcon: 'SQLite3',
+      class: 'restful sql',
+      newIcon: <img src={`${sqliteLogo}`} width="50px" className={'icon'} alt="heroku"/>,
       description: 'Experience using sqlite3 databases tables, queries, joins'
     },
     {
       name: 'Heroku',
       icon: null,
-      class: 'restful',
-      newIcon: 'Heroku',
+      class: 'restful fix',
+      newIcon: <img src={`${herokuLogo}`} width="40px" className={'icon'} alt="heroku"/>,
       description: 'Experince with live deployment/configuration using heroku linked with a github repository master branch'
     },
     {  
       name: 'LESS',
       icon: <FontAwesomeIcon icon={['fab', 'less']} />,
-      description: 'LESS' 
+      description: 'Exstensive experience using LESS compiler to easily organize variables, Mixins, and Namespaces to organize and simplify style sheets.' 
     }
   ]
 
@@ -139,6 +143,16 @@ const Skills = (props) => {
         /* color: #0c2b31;  */
         color: #6D6F83 !important; 
       }
+      .fix {
+        margin-bottom: 7%;
+      }
+      .rest {
+        margin-bottom: 7.8%;
+      }
+      .sql {
+        margin-bottom: -3%;
+      }
+
     }
   `;
   const items = {
