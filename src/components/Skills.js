@@ -142,6 +142,12 @@ const Skills = (props) => {
         margin:14px 0 34px;
         /* color: #0c2b31;  */
         color: #6D6F83 !important; 
+        pointer-events: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -o-user-select: none;
+        user-select: none;
       }
       .fix {
         margin-bottom: 7%;
@@ -150,7 +156,7 @@ const Skills = (props) => {
         margin-bottom: 7.8%;
       }
       .sql {
-        margin-bottom: -3%;
+        margin-bottom: -2.5%;
       }
 
     }

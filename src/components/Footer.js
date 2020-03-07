@@ -30,6 +30,12 @@ const Footer = (props) => {
 		h1{
 			margin: 0;
 			padding: 0;
+			pointer-events: none;
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-o-user-select: none;
+			user-select: none;
 		}
 		p{
 			/* color: hsl(351, 28%, 52%); */
