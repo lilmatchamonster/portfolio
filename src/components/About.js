@@ -65,6 +65,9 @@ const About = (props) => {
         border: 1px solid white;
       }
     }
+    .contact {
+      font-size: 1.5em;
+    }
   `;
   return (
     <Transition
@@ -95,11 +98,15 @@ const About = (props) => {
                 to persure meaningful work with opportunities to grow and learn.
               </p>
             </div>
-            <section className="preview">
+              <div className={'intro-card'}>
+                <h1 style={{color: 'hsla(351, 28%, 52%, .19)'}}>Contact:</h1>
+                <p className={'contact'}>Please feel free to contact me with any questions :) <br/>CocoOliveCats@gmail.com</p>
+              </div>
+            {/* <section className="preview">
               <img src={leaf} alt="leaf"/>
               <img src={leaf_invert} alt="inverted leaf"/>
               <img src={leaf} alt="leaf"/>
-            </section>
+            </section> */}
           </AboutSyles>
          </div>
       }
