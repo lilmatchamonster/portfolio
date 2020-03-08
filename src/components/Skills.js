@@ -167,7 +167,7 @@ const Skills = props => {
         }
         @media screen and (max-width: 500px) {
 					width: 80%;
-          marign: 3rem;
+          margin: 3rem;
         }
         
         p {
