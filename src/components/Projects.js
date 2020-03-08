@@ -22,20 +22,20 @@ const Projects = (props) => {
     {
       pic: `${vendme}`,
       title: 'Vendme',
-      short: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      description: 'lppp'
+      description: 'Vendme helps bring vendors and markets together. Markets can easily display their available stalls to help vendors find locations to set up shop. It also allows vendors the opportunity to showcase some of their goods for curious customers.',
+      stacks: 'Stripe, React, Styled Components, Node.js, Express, CSS, JSX, Heroku, Firebase, Axios, Knex, sqlite3'
     },
     {
       pic: `${spacequest}`,
       title: 'SpaceQuest9',
-      short: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      description: ''
+      description: 'SpaceQuest9 is a multi-user constellation navigation game. Explore different star systems. Learn their names and read a short descrition of them while memorizing their different forms.',
+      stacks: 'React, Styled Components, Konva, Axios, Yup, Python, Django, Django Rest Framework, JSX, CSS'
     },
     {
       pic: `${ila}`,
       title: 'Unknown',
-      short: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      description: ''
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      stacks: ''
     }
   ]
 
@@ -49,17 +49,20 @@ const Projects = (props) => {
     background-repeat: no-repeat;
     background-attachment: fixed !important;
     padding-top: 3.5%;
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
+    right: 0;
+    left: 0;
     width: 100%;
     
     .projects {
-      margin-top: 5%;
+      margin-top: 2.5%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
+      overflow-y: scroll;
+      height: 56%;
     }
   `;
   return (
@@ -81,10 +84,10 @@ const Projects = (props) => {
         props => 
         <div style={props}>
           <ProjectSyles style={theme['a']}>
-            <h1 style={{color: 'hsla(206, 56%, 23%, .19)'}}>Projects Component</h1>
+            <h1 style={{color: 'hsla(206, 56%, 23%, .19)'}}>Projects</h1>
             <div className={'projects'}>
               {myProjects.map((card, i) => (
-                <ProjectCard key={i} description={card.description} pic={card.pic} title={card.title} short={card.short}/>
+                <ProjectCard key={i} stacks={card.stacks} pic={card.pic} title={card.title} description={card.description}/>
               ))}
             </div>
           </ProjectSyles>

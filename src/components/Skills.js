@@ -104,17 +104,19 @@ const Skills = (props) => {
     background-repeat: no-repeat;
     background-attachment: fixed !important;
     padding-top: 3.5%;
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
-    width: 100%;
+    right: 0;
+    left: 0;
+    height: 100%;
 
     .skills-container {
       display: flex;
-      justify-content: center;
-      align-items: center;
       width: 100%;
-      /* margin-top: 5%; */
+      height: 60%;
+      overflow-y: scroll;
+      margin-top: 2.5%;
     }
     .skills {
       display: flex;
