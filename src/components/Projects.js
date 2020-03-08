@@ -47,6 +47,7 @@ const Projects = (props) => {
     -o-background-size: cover;
     background-size: cover !important;
     background-repeat: no-repeat;
+    background-attachment: fixed !important;
     padding-top: 3.5%;
     position: absolute;
     top: 0;

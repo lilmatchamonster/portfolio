@@ -36,6 +36,9 @@ const Footer = (props) => {
 			-moz-user-select: none;
 			-o-user-select: none;
 			user-select: none;
+			@media screen and (max-width: 620px) {
+				display: none;
+			}
 		}
 		p{
 			/* color: hsl(351, 28%, 52%); */
