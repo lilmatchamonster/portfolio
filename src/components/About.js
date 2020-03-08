@@ -30,7 +30,8 @@ const About = props => {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-repeat: no-repeat;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
     padding-top: 3.5%;
     position: absolute;
     top: 0;
@@ -42,13 +43,13 @@ const About = props => {
       /* justify-content: center; */
       align-items: center;
       padding-left: 10%;
-      background-color: hsla(351, 28%, 52%, .09);
+			background-color: hsla(351, 28%, 52%, .09);
       @media screen and (max-width: 750px) {
-        flex-direction: column;
+				flex-direction: column;
 	    }
       
       img {
-        box-shadow: 5px 10px 18px silver;
+				box-shadow: 5px 10px 18px silver;
         width: 15rem;
         height: 15rem;
         border-radius: 50%;
@@ -56,7 +57,7 @@ const About = props => {
         /* border-style: dotted; */
       }
       p {
-        background-color: hsla(351, 28%, 52%, .09);
+				background-color: hsla(351, 28%, 52%, .09);
         box-shadow: 5px 10px 18px silver;
         font-size: 1rem;
         /* color: #0c2b31;   */
@@ -68,12 +69,19 @@ const About = props => {
         margin: 1%;
         width: 40%;
         @media screen and (max-width: 750px) {
-          width: 60%;
+					background-color: hsla(000, 0%, 100%, .7);
+					transition: background-color .75s;
+					width: 60%;
 	      }
-        @media screen and (max-width: 750px) {
-          width: 96%;
+        @media screen and (max-width: 360px) {
+					width: 96%;
 	      }
       }
+			.contact {
+				margin-bottom: 5%;
+				/* font-size: 1.5em; */
+				/* margin-bottom: 300px; */
+			}
     }
     .preview {
       img {
@@ -81,9 +89,6 @@ const About = props => {
         margin: 1%;
         border: 1px solid white;
       }
-    }
-    .contact {
-      font-size: 1.5em;
     }
   `;
 	return (

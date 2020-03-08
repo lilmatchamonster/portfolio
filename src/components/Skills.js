@@ -102,6 +102,7 @@ const Skills = (props) => {
     -o-background-size: cover;
     background-size: cover !important;
     background-repeat: no-repeat;
+    background-attachment: fixed !important;
     padding-top: 3.5%;
     position: absolute;
     top: 0;
@@ -190,7 +191,7 @@ const Skills = (props) => {
         props => 
         <div style={props}>
           <SkillsSyles style={theme['a']}>
-            <h1 style={{color: 'hsla(351, 28%, 52%, .19)'}}>Skills Component</h1>
+            <h1 style={{color: 'hsl(195,16%,85%,.17)', textShadow: '1px 1px hsl(195,16%,85%,.17)', textShadow: 'initial, 1px -1px 0 purple, -1px 1px 0 orange, initial'}}>Tech Stack</h1>
             <div className={'skills-container'}>
               <div className={'skills'}>
                 {mySkills.map((skill, i) => 
@@ -213,3 +214,4 @@ const Skills = (props) => {
 }
 
 export default Skills
+{/* <h1 style={{color: 'hsla(351, 28%, 52%, .19)'}}>Tech Stack</h1> */}
