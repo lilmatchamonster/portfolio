@@ -22,20 +22,20 @@ const Projects = (props) => {
     {
       pic: `${vendme}`,
       title: 'Vendme',
-      short: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      description: 'lppp'
+      description: 'Vendme helps bring vendors and markets together. Markets can easily display their available stalls to help vendors find locations to set up shop. It also allows vendors the opportunity to showcase some of their goods for curious customers.',
+      skills: 'Stripe, React, Styled Components, Node.js, Express, CSS, Html, Heroku, Firebase, Axios, Knex, sqlite3'
     },
     {
       pic: `${spacequest}`,
       title: 'SpaceQuest9',
-      short: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      description: ''
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      skills: ''
     },
     {
       pic: `${ila}`,
       title: 'Unknown',
-      short: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      description: ''
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      skills: ''
     }
   ]
 
@@ -49,17 +49,20 @@ const Projects = (props) => {
     background-repeat: no-repeat;
     background-attachment: fixed !important;
     padding-top: 3.5%;
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
+    right: 0;
+    left: 0;
     width: 100%;
     
     .projects {
-      margin-top: 5%;
+      margin-top: 2.5%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
+      overflow-y: scroll;
+      height: 56%;
     }
   `;
   return (
@@ -84,7 +87,7 @@ const Projects = (props) => {
             <h1 style={{color: 'hsla(206, 56%, 23%, .19)'}}>Projects Component</h1>
             <div className={'projects'}>
               {myProjects.map((card, i) => (
-                <ProjectCard key={i} description={card.description} pic={card.pic} title={card.title} short={card.short}/>
+                <ProjectCard key={i} skills={card.skills} pic={card.pic} title={card.title} description={card.description}/>
               ))}
             </div>
           </ProjectSyles>

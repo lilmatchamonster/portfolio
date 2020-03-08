@@ -6,7 +6,7 @@ import berry_invert from '../imgs/galina-n-AgWVcQz1bOA-unsplash-inverted.jpg'
 import '../App.css';
 
 const ProjectCard = (props) => {
-  const { toggleMenu, description, pic, title, short } = props
+  const { toggleMenu, description, pic, title, skills } = props
   const curTheme = toggleMenu ? 'b' : 'a';
   const theme={
     a:{color: 'hsl(235, 9%, 47%)', background: `url(${berry})`, h1:{color: 'hsla(206, 56%, 23%, .19)'}},
@@ -70,7 +70,7 @@ const ProjectCard = (props) => {
             <img src={pic} alt="Ila" />
             <div>
               <h3>{title}</h3>
-              <p className={'test'} data-hover={description}>{short}</p>
+              <p className={'test'} data-hover={skills}>{description}</p>
             </div>
           </div>
         </CardSyles>
