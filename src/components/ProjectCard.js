@@ -31,14 +31,20 @@ const ProjectCard = (props) => {
       padding-right: 7%;
       margin: 4%;
       width: 90%;
-      /* width: 305px; */
-      height: 269px;
-      background-color: hsla(206, 56%, 23%, .17);
-      color: #0c2b31;
+      min-width: 305px;
+      min-height: 269px;
+      /* height: 16.8em; */
+      height: 91%;
+      background-color: hsla(206, 56%, 23%, .3);
+      /* background-color: rgba(145,171,196, .5); */
+      /* background-color: hsla(206, 56%, 23%, .17); */
+      color: #FFFFFF;
+      /* color: #0c2b31; */
       text-align: left;
       font-size: 1rem;
       font-weight: 500;        
-      text-shadow: 1px 1px silver;
+      text-shadow: 1px 1px darkolivegreen;
+      /* text-shadow: 1px 1px silver; */
       border: 1px solid white;
       transition: background-color .75s, color .75s, border .75s;
     }

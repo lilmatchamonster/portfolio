@@ -36,7 +36,10 @@ const About = props => {
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 100%;
+		width: 100%;
+		@media screen and (max-width: 800px) {
+			padding-top: 9%;
+		}
 
     .intro-card{
       display: flex;
@@ -45,6 +48,7 @@ const About = props => {
       padding-left: 10%;
 			background-color: hsla(351, 28%, 52%, .09);
       @media screen and (max-width: 750px) {
+				padding-left: 0;
 				flex-direction: column;
 	    }
       
