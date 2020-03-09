@@ -31,6 +31,15 @@ const Menu = props => {
 		position: absolute;
 		z-index: 100;
 		${theme[history.location.pathname]}
+		a:link {
+			color: ${theme[history.location.pathname].color};
+		}
+		a:visited {
+			color: green;
+		}
+		a:hover {
+			color: hotpink;
+		}
 		@media screen and (max-width: 800px) {
 			margin-top: 5%;
 		}
