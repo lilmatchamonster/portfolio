@@ -32,12 +32,12 @@ const Projects = (props) => {
       description: 'SpaceQuest9 is a multi-user constellation navigation game. Explore different star systems. Learn their names and read a short descrition of them while memorizing their different forms.',
       stacks: 'React, Styled Components, Konva, Axios, Yup, Python, Django, Django Rest Framework, JSX, CSS'
     },
-    {
-      pic: `${ila}`,
-      title: 'Unknown',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      stacks: ''
-    }
+    // {
+    //   pic: `${ila}`,
+    //   title: 'Unknown',
+    //   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    //   stacks: ''
+    // }
   ]
 
   const ProjectSyles = styled.div`
@@ -56,6 +56,9 @@ const Projects = (props) => {
     right: 0;
     left: 0;
     width: 100%;
+    @media screen and (max-width: 800px) {
+			padding-top: 9%;
+		}
     
     .projects {
       margin-top: 2.5%;
@@ -64,6 +67,14 @@ const Projects = (props) => {
       align-items: center;
       overflow-y: scroll;
       height: 56%;
+
+      @media screen and (max-width: 1250px) {
+        position: relative;
+        padding-right: 10%;
+      }
+      @media screen and (max-width: 860px) {
+        padding-right: 30%;
+      }
     }
   `;
   return (

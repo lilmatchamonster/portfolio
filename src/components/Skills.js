@@ -139,6 +139,9 @@ const Skills = props => {
     right: 0;
     left: 0;
     height: 100%;
+    @media screen and (max-width: 800px) {
+			padding-top: 9%;
+		}
     
     .skills-container {
       display: flex;

@@ -17,15 +17,16 @@ const Menu = props => {
 			h1: { color: 'hsla(206, 56%, 23%, .19)' },
 		},
 		'/skills': {
-			color: 'hsl(235, 9%, 47%)',
+			// color: 'hsl(235, 9%, 47%)',
+			color: '#483432',
 			h1: { color: 'hsla(206, 19%, 59%, .19)' },
 		},
 	};
-
+	
 	const StyledMenu = styled.div`
 		display: flex;
 		flex-direction: column;
-		/* text-align: left; */
+		text-align: left;
 		margin-left: 2%;
 		position: absolute;
 		z-index: 100;
@@ -33,7 +34,7 @@ const Menu = props => {
 		@media screen and (max-width: 800px) {
 			margin-top: 5%;
 		}
-
+		
 		@media screen and (max-width: 500px) {
 			text-align: center;
 			position: sticky;
