@@ -110,12 +110,8 @@ const About = props => {
 					: props => (
 							<div style={props}>
 								<AboutSyles style={theme['a']}>
-									<h1
-										style={{
-											color: 'hsla(351, 28%, 52%, .19)',
-										}}
-									>
-										About Component
+									<h1 style={{color: 'hsla(351, 28%, 52%, .19)', textShadow: '0 0 3px hsl(195,16%,85%,.3)'}}>
+										About
 									</h1>
 									<div className={'intro-card'}>
 										<img src={profilePic} alt='Ash' />
@@ -136,12 +132,7 @@ const About = props => {
 										</p>
 									</div>
 									<div className={'intro-card'}>
-										<h1
-											style={{
-												color:
-													'hsla(351, 28%, 52%, .19)',
-											}}
-										>
+										<h1 style={{color: 'hsla(351, 28%, 52%, .19)', textShadow: '0 0 3px hsl(195,16%,85%,.3)'}}>
 											Contact:
 										</h1>
 										<p className={'contact'}>

@@ -22,6 +22,7 @@ const Projects = (props) => {
     {
       pic: `${vendme}`,
       title: 'Vendme',
+      link: 'https://vendmefe.herokuapp.com',
       description: 'Vendme helps bring vendors and markets together. Markets can easily display their available stalls to help vendors find locations to set up shop. It also allows vendors the opportunity to showcase some of their goods for curious customers.',
       stacks: 'Stripe, React, Styled Components, Node.js, Express, CSS, JSX, Heroku, Firebase, Axios, Knex, sqlite3'
     },

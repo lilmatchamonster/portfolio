@@ -56,7 +56,7 @@ const Skills = props => {
 			name: 'Node.js',
 			icon: <FontAwesomeIcon icon={['fab', 'node']} />,
 			description:
-				'Experience building node servers withe express framwork',
+				'Experience building node servers withe express framework',
 		},
 		{
 			name: 'RESTful Api',
@@ -139,8 +139,7 @@ const Skills = props => {
     right: 0;
     left: 0;
     height: 100%;
-
-
+    
     .skills-container {
       display: flex;
       width: 100%;
@@ -155,6 +154,7 @@ const Skills = props => {
       padding: 1%;
       background-color: hsl(195,16%,85%, .2);
       width: 100%;
+
       .card {
         border: 1px solid white;
         background-color: hsl(195,16%,85%, .7);
@@ -167,7 +167,7 @@ const Skills = props => {
         }
         @media screen and (max-width: 500px) {
 					width: 80%;
-          margin: 3rem;
+          margin: 1rem;
         }
         
         p {
@@ -230,15 +230,7 @@ const Skills = props => {
 					: props => (
 							<div style={props}>
 								<SkillsSyles style={theme['a']}>
-									<h1
-										style={{
-											color: 'hsl(195,16%,85%,.17)',
-											textShadow:
-												'1px 1px hsl(195,16%,85%,.17)',
-											textShadow:
-												'initial, 1px -1px 0 purple, -1px 1px 0 orange, initial',
-										}}
-									>
+									<h1 style={{ color: 'hsl(195,16%,85%,.17)', textShadow: '0 0 3px hsl(195,16%,85%,.3)' }}>
 										Tech Stack
 									</h1>
 									<div className={'skills-container'}>
@@ -250,24 +242,16 @@ const Skills = props => {
 															{skill.icon}
 															<p>{skill.name}</p>
 															<p>
-																{
-																	skill.description
-																}
+																{skill.description}
 															</p>
 														</>
 													) : (
 														<>
-															<p
-																className={`${skill.class}`}
-															>
+															<p className={`${skill.class}`}>
 																{skill.newIcon}
 															</p>
 															<p>{skill.name}</p>
-															<p>
-																{
-																	skill.description
-																}
-															</p>
+															<p>{skill.description}</p>
 														</>
 													)}
 												</div>
@@ -283,6 +267,5 @@ const Skills = props => {
 };
 
 export default Skills;
-{
+
 	/* <h1 style={{color: 'hsla(351, 28%, 52%, .19)'}}>Tech Stack</h1> */
-}
