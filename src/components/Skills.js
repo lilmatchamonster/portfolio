@@ -9,8 +9,8 @@ import styled from 'styled-components';
 import herokuLogo from '../imgs/herokuLogo.svg';
 import sqliteLogo from '../imgs/sqliteLogo.svg';
 import restfulLogo from '../imgs/restfulLogo.svg';
-import beach from '../imgs/beach-close-up-cold-1533720.jpg';
-import beach_invert from '../imgs/beach-close-up-cold-inverted.jpg';
+import beach from '../imgs/beach-close-up-cold-1533720.webp';
+import beach_invert from '../imgs/beach-close-up-cold-inverted.webp';
 import '../App.css';
 
 library.add(fab);

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Transition } from 'react-spring/renderprops';
 import styled from 'styled-components';
-import leaf from '../imgs/leaf.jpg';
-import leaf_invert from '../imgs/leaf-inverted.jpg';
+import leaf from '../imgs/leaf.webp';
+import leaf_invert from '../imgs/leaf-inverted.webp';
 import profilePic from '../imgs/profilePic.jpg';
 import '../App.css';
 

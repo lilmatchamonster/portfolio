@@ -21,6 +21,7 @@ const Header = props => {
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			cursor: pointer;
 			width: 45px;
 			height: 45px;
 			border-radius: 2rem;

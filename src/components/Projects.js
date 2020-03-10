@@ -2,8 +2,8 @@ import React from 'react';
 import ProjectCard from './ProjectCard';
 import { Transition } from "react-spring/renderprops";
 import styled from 'styled-components';
-import berry from '../imgs/galina-n-AgWVcQz1bOA-unsplash.jpg'
-import berry_invert from '../imgs/galina-n-AgWVcQz1bOA-unsplash-inverted.jpg'
+import berry from '../imgs/galina-n-AgWVcQz1bOA-unsplash.webp'
+import berry_invert from '../imgs/galina-n-AgWVcQz1bOA-unsplash-inverted.webp'
 import ila from '../imgs/Ila 2.jpg';
 import vendme from '../imgs/vendme.ico';
 import spacequest from '../imgs/spacequestlogo-03.svg';
