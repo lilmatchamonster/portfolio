@@ -63,7 +63,7 @@ const Skills = props => {
 			icon: null,
 			class: 'restful rest',
 			// newIcon: '{ RESTful }',
-			newIcon: <img src={`${restfulLogo}`} width='100px' alt='heroku' />,
+			newIcon: <img src={`${restfulLogo}`} width='100px' alt='Restful' />,
 			description:
 				'Experince in working with and building restful api endpoints to build full crud functionality',
 		},
@@ -93,7 +93,7 @@ const Skills = props => {
 					src={`${sqliteLogo}`}
 					width='50px'
 					className={'icon'}
-					alt='heroku'
+					alt='SQLite3'
 				/>
 			),
 			description:
@@ -108,7 +108,7 @@ const Skills = props => {
 					src={`${herokuLogo}`}
 					width='40px'
 					className={'icon'}
-					alt='heroku'
+					alt='Heroku'
 				/>
 			),
 			description:
@@ -146,17 +146,18 @@ const Skills = props => {
     .skills-container {
       display: flex;
       width: 100%;
-      height: 60%;
-      overflow-y: scroll;
+      height:60%;
       margin-top: 2.5%;
     }
     .skills {
+      overflow-y: scroll;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       padding: 1%;
       background-color: hsl(195,16%,85%, .2);
       width: 100%;
+      height: 100%;
 
       .card {
         border: 1px solid white;

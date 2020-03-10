@@ -22,7 +22,7 @@ const Menu = props => {
 			h1: { color: 'hsla(206, 19%, 59%, .19)' },
 		},
 	};
-	
+
 	const StyledMenu = styled.div`
 		display: flex;
 		flex-direction: column;
@@ -33,12 +33,6 @@ const Menu = props => {
 		${theme[history.location.pathname]}
 		a:link {
 			color: ${theme[history.location.pathname].color};
-		}
-		a:visited {
-			color: green;
-		}
-		a:hover {
-			color: hotpink;
 		}
 		@media screen and (max-width: 800px) {
 			margin-top: 5%;
