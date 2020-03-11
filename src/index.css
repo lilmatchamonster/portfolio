@@ -7,6 +7,15 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'densmoreregular';
+  src: local('densmoreregular'),
+    url('./fonts/densmore-webfont.woff2') format('woff2'),
+    url('./fonts/densmore.ttf') format('truetype'),
+    url('./densmore-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
