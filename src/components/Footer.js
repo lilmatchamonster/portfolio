@@ -5,7 +5,7 @@ import { createGlobalStyle } from 'styled-components';
 const FooterStyles = createGlobalStyle`
     @import url('../fonts/densmore.ttf');
     .name {
-        font-family: 'Crabmeal', Arial
+        font-family: 'densmore', Arial
     }
 
 `;
