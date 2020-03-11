@@ -29,7 +29,7 @@ const Projects = (props) => {
     {
       pic: `${spacequest}`,
       title: 'SpaceQuest9',
-      description: 'SpaceQuest9 is a multi-user constellation navigation game. Explore different star systems. Learn their names and read a short descrition of them while memorizing their different forms.',
+      description: 'SpaceQuest9 is a multi-user constellation navigation game. Explore different star systems. Learn their names and read a short description of them while memorizing their different forms.',
       stacks: 'React, Styled Components, Konva, Axios, Yup, Python, Django, Django Rest Framework, JSX, CSS'
     },
     // {

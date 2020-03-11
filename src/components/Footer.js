@@ -1,5 +1,14 @@
 import React from 'react';
 import styled from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
+
+const FooterStyles = createGlobalStyle`
+    @import url('../fonts/densmore.ttf');
+    .name {
+        font-family: 'Crabmeal', Arial
+    }
+
+`;
 
 
 const Footer = (props) => {
@@ -54,7 +63,10 @@ const Footer = (props) => {
 	return (
 
 			<Logo>
-				<h1><span>M</span>idori <span>F</span>ukuda</h1>
+				<h1>
+					<FooterStyles/>
+					<span>M</span>idori <span>F</span>ukuda
+				</h1>
 				<p>Ashley Owens</p>
 			</Logo>
 
