@@ -5,7 +5,6 @@ import '../App.css';
 
 const Menu = props => {
 	const { history, settoggleMenu, toggleMenu } = props;
-	console.log(props);
 
 	const theme = {
 		'/': {
