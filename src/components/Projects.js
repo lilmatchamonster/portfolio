@@ -4,6 +4,7 @@ import { Transition } from "react-spring/renderprops";
 import styled from 'styled-components';
 import berry from '../imgs/galina-n-AgWVcQz1bOA-unsplash.webp'
 import berry_invert from '../imgs/galina-n-AgWVcQz1bOA-unsplash-inverted.webp'
+import leaf_icon from '../imgs/leaf-icon.jpg';
 import ila from '../imgs/Ila 2.jpg';
 import vendme from '../imgs/vendme.ico';
 import spacequest from '../imgs/spacequestlogo-03.svg';
@@ -32,12 +33,12 @@ const Projects = (props) => {
       description: 'SpaceQuest9 is a multi-user constellation navigation game. Explore different star systems. Learn their names and read a short description of them while memorizing their different forms.',
       stacks: 'React, Styled Components, Konva, Axios, Yup, Python, Django, Django Rest Framework, JSX, CSS'
     },
-    // {
-    //   pic: `${ila}`,
-    //   title: 'Unknown',
-    //   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    //   stacks: ''
-    // }
+    {
+      pic: `${leaf_icon}`,
+      title: 'Portfolio',
+      description: 'Is a simple site made to display some of my pass projects while being an example of something I can make.',
+      stacks: 'React, Styled Components, CSS, JSX, Netlify, React Spring'
+    }
   ]
 
   const ProjectSyles = styled.div`
