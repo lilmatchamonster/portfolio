@@ -1,18 +1,18 @@
 @font-face {
   font-family: 'Crabmeal';
   src: local('Crabmeal'),
-      url('./fonts/Crabmeal.woff') format('woff'),
-      url('./fonts/Crabmeal.ttf') format('truetype'),
-      url('./fonts/Crabmeal.svg#Crabmeal') format('svg');
+      url('../public/fonts/Crabmeal.woff') format('woff'),
+      url('../public/fonts/Crabmeal.ttf') format('truetype'),
+      url('../public/fonts/Crabmeal.svg#Crabmeal') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'densmoreregular';
-  src: local('densmoreregular'),
-    url('./fonts/densmore-webfont.woff2') format('woff2'),
-    url('./fonts/densmore.ttf') format('truetype'),
-    url('./densmore-webfont.woff') format('woff');
+  font-family: 'Densmore';
+  src: local('Densmore'),
+    url('../public/fonts/densmore-webfont.woff2') format('woff2'),
+    url('../public/fonts/densmore.ttf') format('truetype'),
+    url('../public/densmore-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
