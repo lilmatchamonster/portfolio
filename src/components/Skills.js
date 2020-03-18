@@ -1,10 +1,8 @@
 import React from 'react';
 import { Transition } from 'react-spring/renderprops';
-import { useTransition, animated } from 'react-spring';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-// import { faCheckSquare } from '@fortawesome/free-solid-svg-icons';
 import styled from 'styled-components';
 import herokuLogo from '../imgs/herokuLogo.svg';
 import sqliteLogo from '../imgs/sqliteLogo.svg';
@@ -50,7 +48,7 @@ const Skills = props => {
 			name: 'REACT',
 			icon: <FontAwesomeIcon icon={['fab', 'react']} />,
 			description:
-				'The bulk of my experience on building front end is in the React framework utilzing popular libraies.',
+				'The bulk of my experience on building front end is in the React framework utilzing popular libraies like Redux',
 		},
 		{
 			name: 'Node.js',
@@ -62,7 +60,6 @@ const Skills = props => {
 			name: 'RESTful Api',
 			icon: null,
 			class: 'restful rest',
-			// newIcon: '{ RESTful }',
 			newIcon: <img src={`${restfulLogo}`} width='100px' alt='Restful' />,
 			description:
 				'Experince in working with and building restful api endpoints to build full crud functionality',
@@ -205,16 +202,6 @@ const Skills = props => {
 
     }
   `;
-	const items = {
-		height: 150,
-		width: 150,
-	};
-	const transitions = useTransition(items, item => item.key, {
-		from: { transform: 'translate3d(0,-40px,0)' },
-		enter: { transform: 'translate3d(0,0px,0)' },
-		leave: { transform: 'translate3d(0,-40px,0)' },
-	});
-
 	return (
 		<Transition
 			items={toggleMenu}
@@ -272,4 +259,3 @@ const Skills = props => {
 
 export default Skills;
 
-	/* <h1 style={{color: 'hsla(351, 28%, 52%, .19)'}}>Tech Stack</h1> */

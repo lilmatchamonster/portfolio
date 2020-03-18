@@ -43,7 +43,6 @@ const About = props => {
 
     .intro-card{
       display: flex;
-      /* justify-content: center; */
       align-items: center;
       padding-left: 10%;
 			background-color: hsla(351, 28%, 52%, .09);
@@ -58,13 +57,11 @@ const About = props => {
         height: 15rem;
         border-radius: 50%;
         margin: 2.5%;
-        /* border-style: dotted; */
       }
       p {
 				background-color: hsla(351, 28%, 52%, .09);
         box-shadow: 5px 10px 18px silver;
         font-size: 1rem;
-        /* color: #0c2b31;   */
         font-weight: 500;
         text-align: left;
         text-shadow: 1px 1px silver;
@@ -83,8 +80,6 @@ const About = props => {
       }
 			.contact {
 				margin-bottom: 5%;
-				/* font-size: 1.5em; */
-				/* margin-bottom: 300px; */
 			}
     }
     .preview {
@@ -130,7 +125,7 @@ const About = props => {
 											others.
 											<br />
 											As a web developer, I hope to use my
-											skills to persure meaningful work
+											skills to pursue meaningful work
 											with opportunities to grow and
 											learn.
 										</p>

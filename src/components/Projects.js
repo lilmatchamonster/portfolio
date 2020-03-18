@@ -25,7 +25,7 @@ const Projects = (props) => {
       title: 'Vendme',
       link: 'https://vendmefe.herokuapp.com',
       description: 'Vendme helps bring vendors and markets together. Markets can easily display available stalls to help vendors find locations to setup shop. It also allows vendors the opportunity to showcase their goods for curious customers.',
-      stacks: 'Collaborated remotely with 4 other Wed Developers utilizing Stripe, React, Styled Components, Node.js, Express, CSS, JSX, Heroku, Firebase, Axios, Knex, and sqlite3. I mainly worked on frontend data management.  |  ',
+      stacks: 'Collaborated remotely with 4 other Wed Developers for 2 months utilizing Stripe, React, Styled Components, Node.js, Express, CSS, JSX, Heroku, Firebase, Axios, Knex, and sqlite3. I mainly worked on frontend data management.  |  ',
       hub: 'https://github.com/vendme',
     },
     {
@@ -33,13 +33,13 @@ const Projects = (props) => {
       title: 'SpaceQuest9',
       link: 'https://space-quest-9.netlify.com/',
       description: 'SpaceQuest9 is a multi-user constellation navigation game. Explore different star systems. Learn their names and read a short description of them while memorizing their different forms. Collaborated with 5 Web Developers.',
-      stacks: 'Collaborated remotely with 4 other Web Developers using React, Styled Components, Konva, Axios, Yup, Python, Django, Django Rest Framework, JSX, and CSS. I was solely responsible for building the game interface and canvas display.  |  ',
+      stacks: 'Collaborated remotely with 4 other Web Developers for 1 week using React, Styled Components, Konva, Axios, Yup, Python, Django, Django Rest Framework, JSX, and CSS. I was solely responsible for building the game interface and canvas display.  |  ',
       hub: 'https://github.com/spacequest9',
     },
     {
       pic: `${leaf_icon}`,
       title: 'Portfolio',
-      description: 'Is a simple site made to display some of my pass projects while being an example of something I can make.',
+      description: 'Is a simple site made to display some of my past projects while being an example of something I can make.',
       stacks: 'Created using React, Styled Components, CSS, JSX, Netlify, and React Spring.  |  ',
       hub: 'https://github.com/lilmatchamonster/portfolio',
     }
