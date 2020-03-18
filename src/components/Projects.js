@@ -25,7 +25,7 @@ const Projects = (props) => {
       title: 'Vendme',
       link: 'https://vendmefe.herokuapp.com',
       description: 'Vendme helps bring vendors and markets together. Markets can easily display available stalls to help vendors find locations to setup shop. It also allows vendors the opportunity to showcase their goods for curious customers.',
-      stacks: 'Collaborated remotely with 4 other Wed Developers for 2 months utilizing Stripe, React, Styled Components, Node.js, Express, CSS, JSX, Heroku, Firebase, Axios, Knex, and sqlite3. I mainly worked on frontend data management.  |  ',
+      stacks: 'Collaborated remotely with 4 other Web Developers for 2 months utilizing Stripe, React, Styled Components, Node.js, Express, CSS, JSX, Heroku, Firebase, Axios, Knex, and sqlite3. I mainly worked on frontend data management.  |  ',
       hub: 'https://github.com/vendme',
     },
     {
