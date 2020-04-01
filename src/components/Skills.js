@@ -27,34 +27,34 @@ const Skills = props => {
 	};
 	const mySkills = [
 		{
-			name: 'html5',
+			name: 'HTML5',
 			icon: <FontAwesomeIcon icon={['fab', 'html5']} />,
 			description:
-				'Experince using html to seperate web elements into appropriate html tags and display data.',
+				'Experience using HTML to seperate web elements into appropriate HTML tags and display data.',
 		},
 		{
 			name: 'CSS3',
 			icon: <FontAwesomeIcon icon={['fab', 'css3-alt']} />,
 			description:
-				'Experience in using css to make UI with and without a UX designer. And Also have experience with the Sass and Less frameworks',
+				'Experience in using CSS to make UI with and without an UX designer. And Also have experience with the SASS and LESS frameworks',
 		},
 		{
-			name: 'Javascript',
+			name: 'JavaScript',
 			icon: <FontAwesomeIcon icon={['fab', 'js-square']} />,
 			description:
-				'Experince writing javascript es6, DOM manipulation, writing functions, bulit in methods',
+				'Experience writing JavaScript es6, DOM manipulation, writing functions, and bulit in methods',
 		},
 		{
 			name: 'REACT',
 			icon: <FontAwesomeIcon icon={['fab', 'react']} />,
 			description:
-				'The bulk of my experience on building front end is in the React framework utilzing popular libraies like Redux',
+				'The bulk of my experience in building frontend applications is in the React framework utilzing popular libraies like Redux',
 		},
 		{
 			name: 'Node.js',
 			icon: <FontAwesomeIcon icon={['fab', 'node']} />,
 			description:
-				'Experience building node servers withe express framework',
+				'Experience building Node servers with Express framework',
 		},
 		{
 			name: 'RESTful Api',
@@ -62,13 +62,13 @@ const Skills = props => {
 			class: 'restful rest',
 			newIcon: <img src={`${restfulLogo}`} width='100px' alt='Restful' />,
 			description:
-				'Experince in working with and building restful api endpoints to build full crud functionality',
+				'Experience in working with and building RESTFul API endpoints to build full CRUD functionality',
 		},
 		{
 			name: 'Github',
 			icon: <FontAwesomeIcon icon={['fab', 'github-alt']} />,
 			description:
-				'Experience working with online cloud version control utilizing seperate production, staging, development, feature branches',
+				'Experience working with online cloud version control utilizing seperate production, staging, development, and feature branches',
 		},
 		{
 			name: 'Python',
@@ -79,7 +79,7 @@ const Skills = props => {
 			name: 'Squarespace',
 			icon: <FontAwesomeIcon icon={['fab', 'squarespace']} />,
 			description:
-				'Well versed in setting up dynamic and unique website through Squarespace. Excellent at setting up Commerce sites and handling payments via Stripe.',
+				'Well versed in setting up dynamic and unique websites through Squarespace. Excellent at setting up Commerce sites and handling payments via Stripe.',
 		},
 		{
 			name: 'SQLite3',
@@ -94,7 +94,7 @@ const Skills = props => {
 				/>
 			),
 			description:
-				'Experience using sqlite3 databases tables, queries, joins',
+				'Experience using sqlite3 databases tables, queries, and joins',
 		},
 		{
 			name: 'Heroku',
@@ -109,13 +109,13 @@ const Skills = props => {
 				/>
 			),
 			description:
-				'Experince with live deployment/configuration using heroku linked with a github repository master branch',
+				'Experience with live deployment/configuration using heroku linked with a github repository master branch',
 		},
 		{
 			name: 'LESS',
 			icon: <FontAwesomeIcon icon={['fab', 'less']} />,
 			description:
-				'Exstensive experience using LESS compiler to easily organize variables, Mixins, and Namespaces to organize and simplify style sheets.',
+				'Extensive experience using LESS/SASS compiler to easily control variables, Mixins, and Namespaces to organize and simplify style sheets.',
 		},
 	];
 
