@@ -123,11 +123,15 @@ const About = props => {
 											use our talents to improve the world
 											around us and improve the lives of
 											others.
-											<br />
+											<br/>
+											<br/>
 											As a web developer, I hope to use my
 											skills to pursue meaningful work
 											with opportunities to grow and
 											learn.
+											<br/>
+											<br/>
+											I work in React/Redux, JavaScript, HTML5/CSS3, Node.js, RESTFul API, Python, SQLite3, and LESS/SASS. 
 										</p>
 									</div>
 									<div className={'intro-card'}>
