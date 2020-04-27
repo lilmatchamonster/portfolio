@@ -100,58 +100,58 @@ const About = props => {
 			{toggleMenu =>
 				toggleMenu
 					? props => (
-							<div style={props}>
-								<AboutSyles style={theme['b']}>
-									<div></div>
-								</AboutSyles>
-							</div>
-					  )
+						<div style={props}>
+							<AboutSyles style={theme['b']}>
+								<div></div>
+							</AboutSyles>
+						</div>
+					)
 					: props => (
-							<div style={props}>
-								<AboutSyles style={theme['a']}>
-									<h1 style={{color: 'hsla(351, 28%, 52%, .19)', textShadow: '0 0 3px hsl(195,16%,85%,.3)'}}>
-										About
+						<div style={props}>
+							<AboutSyles style={theme['a']}>
+								<h1 style={{ color: 'hsla(351, 28%, 52%, .19)', textShadow: '0 0 3px hsl(195,16%,85%,.3)' }}>
+									About
 									</h1>
-									<div className={'intro-card'}>
-										<img src={profilePic} alt='Ash' />
-										<p>
-											Hi, I am Ashley a Digital Artist and
-											Full Stack Web Developer. I have
-											always loved to create something
-											beautiful be it visual, musical, or
-											technical. I believe that we should
-											use our talents to improve the world
-											around us and improve the lives of
-											others.
-											<br/>
-											<br/>
+								<div className={'intro-card'}>
+									<img src={profilePic} alt='Ash' style={{ transform: "rotate(-90deg)" }} />
+									<p>
+										Hi, I am Ashley a Digital Artist and
+										Full Stack Web Developer. I have
+										always loved to create something
+										beautiful be it visual, musical, or
+										technical. I believe that we should
+										use our talents to improve the world
+										around us and improve the lives of
+										others.
+											<br />
+										<br />
 											As a web developer, I hope to use my
 											skills to pursue meaningful work
 											with opportunities to grow and
 											learn.
-											<br/>
-											<br/>
-											I work in React/Redux, JavaScript, HTML5/CSS3, Node.js, RESTFul API, Python, SQLite3, and LESS/SASS. 
+											<br />
+										<br />
+											I work in React/Redux, JavaScript, HTML5/CSS3, Node.js, RESTFul API, Python, SQLite3, and LESS/SASS.
 										</p>
-									</div>
-									<div className={'intro-card'}>
-										<h1 style={{color: 'hsla(351, 28%, 52%, .19)', textShadow: '0 0 3px hsl(195,16%,85%,.3)'}}>
-											Contact:
+								</div>
+								<div className={'intro-card'}>
+									<h1 style={{ color: 'hsla(351, 28%, 52%, .19)', textShadow: '0 0 3px hsl(195,16%,85%,.3)' }}>
+										Contact:
 										</h1>
-										<p className={'contact'}>
-											Please feel free to contact me with
+									<p className={'contact'}>
+										Please feel free to contact me with
 											any questions :) <br />
 											CocoOliveCats@gmail.com
 										</p>
-									</div>
-									{/* <section className="preview">
+								</div>
+								{/* <section className="preview">
               <img src={leaf} alt="leaf"/>
               <img src={leaf_invert} alt="inverted leaf"/>
               <img src={leaf} alt="leaf"/>
             </section> */}
-								</AboutSyles>
-							</div>
-					  )
+							</AboutSyles>
+						</div>
+					)
 			}
 		</Transition>
 	);
