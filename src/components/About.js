@@ -3,7 +3,7 @@ import { Transition } from 'react-spring/renderprops';
 import styled from 'styled-components';
 import leaf from '../imgs/leaf.webp';
 import leaf_invert from '../imgs/leaf-inverted.webp';
-import profilePic from '../imgs/profilePic.jpg';
+import profilePic2 from '../imgs/profilePic2.jpg';
 import '../App.css';
 
 const About = props => {
@@ -113,7 +113,7 @@ const About = props => {
 									About
 									</h1>
 								<div className={'intro-card'}>
-									<img src={profilePic} alt='Ash' style={{ transform: "rotate(-90deg)" }} />
+									<img src={profilePic2} alt='Ash'/>
 									<p>
 										Hi, I am Ashley a Digital Artist and
 										Full Stack Web Developer. I have

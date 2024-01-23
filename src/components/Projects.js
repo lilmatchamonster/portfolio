@@ -5,9 +5,9 @@ import styled from 'styled-components';
 import berry from '../imgs/galina-n-AgWVcQz1bOA-unsplash.webp'
 import berry_invert from '../imgs/galina-n-AgWVcQz1bOA-unsplash-inverted.webp'
 import leaf_icon from '../imgs/leaf-icon.jpg';
-import ila from '../imgs/Ila 2.jpg';
 import vendme from '../imgs/vendme.ico';
 import spacequest from '../imgs/spacequestlogo-03.svg';
+import notesequence from '../imgs/sequenceLogo.svg';
 import '../App.css';
 
 const Projects = (props) => {
@@ -21,9 +21,17 @@ const Projects = (props) => {
 
   const myProjects = [
     {
+      pic: `${notesequence}`,
+      title: 'Note Sequencer App',
+      link: 'https://note-sequence.netlify.app',
+      description: 'Note Sequencer enables users to create sequences of notes that can be saved locally, updated and played back.',
+      stacks: 'Created frontend UI and functionality with React, Axios, and Howler.js.  |  ',
+      hub: 'https://github.com/lilmatchamonster/note-sequence',
+    },
+    {
       pic: `${vendme}`,
       title: 'Vendme',
-      link: 'https://vendmefe.herokuapp.com',
+      // link: 'https://vendmefe.herokuapp.com',
       description: 'Vendme helps bring vendors and markets together. Markets can easily display available stalls to help vendors find locations to setup shop. It also allows vendors the opportunity to showcase their goods for curious customers.',
       stacks: 'Collaborated remotely with 4 other Web Developers for 2 months utilizing Stripe, React, Styled Components, Node.js, Express, CSS, JSX, Heroku, Firebase, Axios, Knex, and sqlite3. I mainly worked on frontend data management.  |  ',
       hub: 'https://github.com/vendme',
@@ -31,7 +39,7 @@ const Projects = (props) => {
     {
       pic: `${spacequest}`,
       title: 'SpaceQuest9',
-      link: 'https://space-quest-9.netlify.com/',
+      // link: 'https://space-quest-9.netlify.com/',
       description: 'SpaceQuest9 is a multi-user constellation navigation game. Explore different star systems. Learn their names and read a short description of them while memorizing their different forms. Collaborated with 5 Web Developers.',
       stacks: 'Collaborated remotely with 4 other Web Developers for 1 week using React, Styled Components, Konva, Axios, Yup, Python, Django, Django Rest Framework, JSX, and CSS. I was solely responsible for building the game interface and canvas display.  |  ',
       hub: 'https://github.com/spacequest9',
