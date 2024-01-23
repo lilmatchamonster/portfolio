@@ -7,6 +7,7 @@ import styled from 'styled-components';
 import herokuLogo from '../imgs/herokuLogo.svg';
 import sqliteLogo from '../imgs/sqliteLogo.svg';
 import restfulLogo from '../imgs/restfulLogo.svg';
+import styledComponentsLogo from '../imgs/styledComponentsLogo.svg';
 import beach from '../imgs/beach-close-up-cold-1533720.webp';
 import beach_invert from '../imgs/beach-close-up-cold-inverted.webp';
 import '../App.css';
@@ -104,18 +105,33 @@ const Skills = props => {
 				<img
 					src={`${herokuLogo}`}
 					width='40px'
-					className={'icon'}
+					className={'icon heroku'}
 					alt='Heroku'
 				/>
 			),
 			description:
-				'Experience with live deployment/configuration using heroku linked with a github repository master branch',
+			'Experience with live deployment/configuration using heroku linked with a github repository master branch',
 		},
 		{
 			name: 'LESS',
 			icon: <FontAwesomeIcon icon={['fab', 'less']} />,
 			description:
-				'Extensive experience using LESS/SASS compiler to easily control variables, Mixins, and Namespaces to organize and simplify style sheets.',
+			'Extensive experience using LESS/SASS compiler to easily control variables, Mixins, and Namespaces to organize and simplify style sheets.',
+		},
+		{
+			name: 'Styled Components',
+			icon: null,
+			newIcon: (
+				<img
+					src={`${styledComponentsLogo}`}
+					width='48px'
+					height="100%"
+					className={'icon'}
+					alt='Styled Components'
+				/>
+			),
+			description:
+				'Experience using styled components to not only create themes and easy to handle dynamic styling, but also to create reusable custom styled components.',
 		},
 	];
 
@@ -194,10 +210,13 @@ const Skills = props => {
         margin-bottom: 7%;
       }
       .rest {
-        margin-bottom: 7.8%;
+        margin-bottom: 5%;
       }
       .sql {
         margin-bottom: -2.5%;
+      }
+      .heroku {
+				margin-bottom: -3.3%;
       }
 
     }
